@@ -12,6 +12,7 @@
  * Continuous Rx: causalR, CBPS (dr, gen. ps), causaldrf (gen. ps)
  * Double-robust: drgee, tmle
  * High-dimensional: crossEstimation
+* changepioint: bcp, ebayesthresh, quantreg (rq), strucchange, segmented, wavethresh
 * Collinearity (VIF>10, only for explanation):
  * CorReg, ridge, bestglm, yhat(dominance analysis), rf, pcareg, penalized (hd1), perturb, pls (pcr), sem, centering
 * Compare:
@@ -63,6 +64,7 @@
  * ZeroSum
 * Outliers:
  * FastPCs, mvoutlier
+* Penalized regression (shrinkage, no SE or CI): bayesPen, biglars, covTest, elasticnet, extlasso, frailtypack, glmnet, EBglmnet, glmmlasso, glmpath, grplasso, grpreg, lars, lasso2, lqa, monomvn, ncvreg, parcor, penalized, penalizedSVM, plus, quantreg, polywog, relaxo, ridge, rqPen, RXshrink, SIS
 * PLS-SEM (variance-based SEM; reflective indicators: PLSc, high reliability and validity; formative indicators: ):
  * matrixpls (with wrappers for plsm, sempls), plsRbeta, plsRcox, plspm, sempls
 * Power:
@@ -74,28 +76,19 @@
  * Prediction error: A3, perry (Resampling-based prediction error estimation for regression models), pec (survival)
 * Regression:
  * visreg, use prior knowledge, do NOT let the computers do all the works for you, do NOT drop pre-specified insignificant variables, imputation (Hmisc: aregimpute), interaction and rcs for Xs (k knots, k=3-5 chosen by AIC, k=3 if n<30, k=5 if n>100) followed by penalization, check additivity by a global test and either keep all or delete all interactions, fastbw if parsimony is more important than prediction), MBESS
-* Hmisc: areg (Additive Regression with Optimal Transformations on Both Sides using Canonical Variates), aregImpute,redun (redundancy analysis), transcan
-	rms:
-		calibrate, fastbw, plsmo, Rq (quantreg), rrcov, validate
-	car:
-		avPlot (influential data), boxCox, crPlot (linearity), ncvTest (heteroscedasticity test for lm), anova (for nested models), dataEllipse, influencePlot (to detect outliers, better than Cooks distance in plot), linearHypothesis, outlierTest, leveragePlots, qqPlot (normality), vif
-	Binary Y:
-		arm (bayesglm)
-	GAM (gamlss, mgcv, VGAM), Hierachical regression (AutoModel),	MARS (earth), quantile regression (quantreg)
-	alr4, MBESS, regclass, rms (calibrate, validate)
-Reproducible research:
-	markdown: knitr, eidtR, notebook
-	archivist, archivist.github, ProjectTemplate
-Robust:
-	drgee, robust (glmRob), mblm, rgam, MASS (lqs, rlm), robcor, robustlmm, robustreg, sandwich (vcovHC), wrs2
-	lqmm (lmm quantreg) rqpd
-Sensitivity analysis
-	causalsens (uc), episensr, mediation, multisensi, obsSens, rbounds, SBSA (fs for glm and survival analysis), sensitivity, sensitivitymv, sensitivityPstrat (principal stratification), SobolSensitivity, treatSens (uc)
+ * Hmisc: areg (Additive Regression with Optimal Transformations on Both Sides using Canonical Variates), aregImpute,redun (redundancy analysis), transcan
+ * rms:	calibrate, fastbw, plsmo, Rq (quantreg), rrcov, validate
+ * car:	avPlot (influential data), boxCox, crPlot (linearity), ncvTest (heteroscedasticity test for lm), anova (for nested models), dataEllipse, influencePlot (to detect outliers, better than Cooks distance in plot), linearHypothesis, outlierTest, leveragePlots, qqPlot (normality), vif
+ * Binary Y: arm (bayesglm)
+ * GAM (gamlss, mgcv, VGAM), Hierachical regression (AutoModel), MARS (earth), quantile regression (quantreg), alr4, MBESS, regclass, rms (calibrate, validate)
+* Reproducible research:
+ * markdown: knitr, eidtR, notebook, archivist, archivist.github, ProjectTemplate
+* Robust:
+ * drgee, robust (glmRob), mblm, rgam, MASS (lqs, rlm), robcor, robustlmm, robustreg, sandwich (vcovHC), wrs2, lqmm (lmm quantreg) rqpd
+* Sensitivity analysis
+ * causalsens (uc), episensr, mediation, multisensi, obsSens, rbounds, SBSA (fs for glm and survival analysis), sensitivity, sensitivitymv, sensitivityPstrat (principal stratification), SobolSensitivity, treatSens (uc)
 Structural equation model (only for reflective indicators)
-	lavaan, sem
-Survival:
-	c060 (lasso, complexity.glmnet, Plot.peperr.curves, plot.stabpath), glmbfp (Bayesian model selection), greyzoneSurv, rms
-	joint model: JM, JMbayes
-Model selection: glmulti, bestglm, glmnet, MuMIn, AICcmodavg, FWDselect
-changepioint: bcp, ebayesthresh, quantreg (rq), strucchange, segmented, wavethresh
-Penalized regression (shrinkage, no SE or CI): bayesPen, biglars, covTest, elasticnet, extlasso, frailtypack, glmnet, EBglmnet, glmmlasso, glmpath, grplasso, grpreg, lars, lasso2, lqa, monomvn, ncvreg, parcor, penalized, penalizedSVM, plus, quantreg, polywog, relaxo, ridge, rqPen, RXshrink, SIS
+ * lavaan, sem
+* Survival:
+ * c060 (lasso, complexity.glmnet, Plot.peperr.curves, plot.stabpath), glmbfp (Bayesian model selection), greyzoneSurv, rms
+ * joint model: JM, JMbayes
