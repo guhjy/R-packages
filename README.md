@@ -86,7 +86,7 @@
 * Robust:
  * drgee, robust (glmRob), mblm, rgam, MASS (lqs, rlm), robcor, robustlmm, robustreg, sandwich (vcovHC), wrs2, lqmm (lmm quantreg) rqpd
 * Sensitivity analysis
- * causalsens (uc), episensr, mediation, multisensi, obsSens, rbounds, SBSA (fs for glm and survival analysis), sensitivity, sensitivitymv, sensitivityPstrat (principal stratification), SobolSensitivity, treatSens (uc)
+ * causalsens (uc), episensr, mediation, multisensi, obsSens, rbounds, SBSA (fs for glm and survival analysis), sensitivity, sensitivitymv, sensitivityPstrat (principal stratification), SobolSensitivity, treatSens (binary uc)
 Structural equation model (only for reflective indicators)
  * lavaan, sem
 * Survival:
